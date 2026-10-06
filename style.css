@@ -1,5 +1,5 @@
 * {
-  border: 1px solid red;
+  border: 1px solid red and blue;
 }
 
 p {
@@ -11,7 +11,7 @@ h1 {
 }
 
 .title {
-  color: teal;
+  color: white;
 }
 
 .uppercase {
