@@ -1,5 +1,5 @@
 * {
-  border: 1px solid red and blue;
+  border: 1px solid red;
 }
 
 p {
@@ -22,15 +22,15 @@ h1 {
   font-family: cursive;
 }
 
-a[href*='florence'] {
+a[href*='Barcelona'] {
   color: lightgreen;
 }
 
-a[href*='beijing'] {
+a[href*='Real Madrid'] {
   color: lightblue;
 }
 
-a[href*='seoul'] {
+a[href*='Bayern Munich'] {
   color: lightpink;
 }
 
@@ -39,7 +39,7 @@ a:hover {
 }
 
 .heading-background {
-  background-color: aqua;
+  background-color: white;
 }
 
 #publish-time {
@@ -55,7 +55,7 @@ h5 {
 }
 
 #author-id {
-  color: cornflowerblue;
+  color: black;
 }
 
 h2.destination {
