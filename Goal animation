@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soccer Goal Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(to bottom, #87ceeb, #90ee90);
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Goal Posts */
+        .goal {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 200px;
+            height: 150px;
+        }
+
+        .post {
+            position: absolute;
+            width: 8px;
+            height: 150px;
+            background: #fff;
+        }
+
+        .post.left {
+            left: 0;
+        }
+
+        .post.right {
+            right: 0;
+        }
+
+        .crossbar {
+            position: absolute;
+            top: 0;
+            width: 200px;
+            height: 8px;
+            background: #fff;
+        }
+
+        .net {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            width: 184px;
+            height: 142px;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 255, 255, 0.3) 10px,
+                rgba(255, 255, 255, 0.3) 12px
+            ),
+            repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 10px,
+                rgba(255, 255, 255, 0.3) 10px,
+                rgba(255, 255, 255, 0.3) 12px
+            );
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-top: none;
+        }
+
+        /* Ball */
+        .ball {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background: radial-gradient(circle at 30% 30%, #fff, #000);
+            border-radius: 50%;
+            bottom: 200px;
+            left: 50px;
+            animation: kickBall 2s ease-in-out infinite;
+        }
+
+        @keyframes kickBall {
+            0% {
+                left: 50px;
+                bottom: 200px;
+                transform: scale(1);
+            }
+            50% {
+                bottom: 250px;
+            }
+            90% {
+                left: 240px;
+                bottom: 80px;
+                transform: scale(1);
+            }
+            100% {
+                left: 250px;
+                bottom: 75px;
+                transform: scale(0.8);
+            }
+        }
+
+        /* Trail effect */
+        .trail {
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        .title {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="title">⚽ GOOOOOAL!</div>
+        <div class="ball"></div>
+        <div class="goal">
+            <div class="post left"></div>
+            <div class="post right"></div>
+            <div class="crossbar"></div>
+            <div class="net"></div>
+        </div>
+    </div>
+</body>
+</html>
