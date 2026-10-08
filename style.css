@@ -23,7 +23,7 @@ h1 {
 }
 
 a[href*='Barcelona'] {
-  color: lightgreen;
+  color: red;
 }
 
 a[href*='Real Madrid'] {
@@ -31,7 +31,7 @@ a[href*='Real Madrid'] {
 }
 
 a[href*='Bayern Munich'] {
-  color: lightpink;
+  color: lightred;
 }
 
 a:hover {
@@ -43,15 +43,15 @@ a:hover {
 }
 
 #publish-time {
-  color: lightgray;
+  color: gray;
 }
 
 h5 {
-  color: yellow;
+  color: black;
 }
 
 .author-class {
-  color: pink;
+  color: black;
 }
 
 #author-id {
@@ -63,15 +63,15 @@ h2.destination {
 }
 
 .description h5 {
-  color: blueviolet;
+  color: black;
 }
 
 li h4 {
-  color: gold;
+  color: black;
 }
 
 h4 {
-  color: dodgerblue;
+  color: black;
 }
 
 li,
