@@ -1,17 +1,17 @@
 * {
-  border: 1px solid red;
+  border: 1px solid white;
 }
 
 p {
-  color: green;
+  color: black;
 }
 
 h1 {
-  color: maroon;
+  color: black;
 }
 
 .title {
-  color: white;
+  color: black;
 }
 
 .uppercase {
