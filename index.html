@@ -1,62 +1,281 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Futbol | Rise for the Cup</title>
+    <meta
+      name="description"
+      content="A modern soccer website with match updates, team highlights, and big-game energy."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-bar">
+          <div class="brand" aria-label="Futbol home">
+            <span class="brand-mark">F</span>
+            <span>Futbol</span>
+          </div>
 
-<head>
-  <title> The Game called Soccer</title>
-  <link href='style.css' rel='stylesheet'>
-</head>
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#teams">Teams</a>
+            <a href="#fixtures">Fixtures</a>
+            <a href="#news">News</a>
+            <a href="#fans">Fans</a>
+          </nav>
 
-<body>
-  <img https://share.google/N31U7E4aZFWv7S7f0/>
-  <h1 class='title uppercase' id='article-title'>Top Teams in Europe</h1>
-  <h5 class='author-class' id='author-id'>By: Julian Guerra</h5>
-  <h6 id='publish-time'>Published: 2 weeks Ago</h6>
+          <a href="#fixtures" class="btn btn-outline">Match Centre</a>
+        </div>
+      </header>
 
-  <p>The football world is full of fascinating teams. Want a team to support? Here are a some options. </p>
+      <main>
+        <section class="hero" id="home">
+          <div class="container hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">Matchday Energy</p>
+              <h1>Rise <span>for the</span> next big win.</h1>
+              <p class="subtext">
+                Follow the drama, celebrate the goals, and stay connected to the world of
+                football like never before.
+              </p>
 
-  <h2 class='https://share.google/TX9bTQ37JFOR5dwGa'>1. FC Barcelona</h2>
-  <div class='description'>A city built on loaytly and hardwork. A team full of passion and support. Many famous footballers have came from the acadamy La Masia stayed with team started and ended their career at this club. Many famous Footballers from this academy are Lional Messi,Lamine Yamel,Xavi Hernadez,and Pau Curbasi. All these footballers came from the academy and gradurated from that academy and went on to start their career at FC Barcelona.
-    <a href='https://www.fcbarcelona.com/en/' target='_blank'>Learn More</a>.
-    <h5>Top Current Players</h5>
-    <ul>
-      <li>Lamine Yamel</li>
-      <li>Pedri Lopez</li>
-      <li>Raphinha</li>
-    </ul>
-  </div>
+              <div class="cta-row">
+                <a href="#teams" class="btn btn-primary">Explore Teams</a>
+                <a href="#fixtures" class="btn btn-secondary">View Fixtures</a>
+              </div>
 
-  <h2 class='destination heading-background'>2. Real Mardrid </h2>
-  <div class='description'>A city full of champions. A team full of superstars. Many famous players have come from this team. If you are a superstar player Real Mardrid is always an option. This team are full of champions. Many famous players from this team are Cristano Ronaldo, Zinedane Zidan, Luka Modric, Iker Casillas, and Kylian Mbappe. All these footballers have played with this team in their career and made an impact on the team.
-    <a href='https://www.realmadrid.com/en-US' target='_blank'>Learn More</a>.
-    <h5>Top Current Players</h5>
-    <ul>
-      <li>Klyian Mbappe</li>
-      <li>Arda Guller</li>
-      <li>Vini JR</li>
-    </ul>
-  </div>
+              <div class="mini-stats" aria-label="Key stats">
+                <div>
+                  <strong>18</strong>
+                  <span>Leagues</span>
+                </div>
+                <div>
+                  <strong>120+</strong>
+                  <span>Clubs</span>
+                </div>
+                <div>
+                  <strong>24/7</strong>
+                  <span>Updates</span>
+                </div>
+              </div>
+            </div>
 
-  <h2 class='destination heading-background'>3. Bayern Munich</h2>
-  <div class='description'>The city full of superstars and hardworkers. A club dominating their league for decades with only one true rival. If you like beer and football then this is the team for you. If you don't like beer but love football. This is still a great team to support.
-    <a href='https://fcbayern.com/en' target='_blank'>Learn More</a>
-    <h5>Top Current Players</h5>
-    <ul>
-      <li>Saibri</li>
-      <li>Alphose Davies</li>
-      <li>Harry Kane</li>
-    </ul>
-  </div>
+            <div class="hero-panel">
+              <div class="panel-topline">
+                <span>Premier League</span>
+                <span>Tonight</span>
+              </div>
 
-  <h2 class='heading-background'> More Teams </h2>
-  <ul>
-    <li><h4 class='destination'>Man United</h4></li>
-    <li><h4 class='destination'>AC Millan</h4></li>
-    <li><h4 class='destination'>PSG</h4></li>
-  </ul>
+              <div class="score-card">
+                <div class="team">
+                  <div class="team-badge badge-home">FCM</div>
+                  <p>Home</p>
+                </div>
 
-  <p>&mdash;We wish you the best of luck with finding a team, be sure to send pictures and stories. We'd love to hear them!</p>
+                <div class="score">2 : 1</div>
 
+                <div class="team">
+                  <div class="team-badge badge-away">RIV</div>
+                  <p>Away</p>
+                </div>
+              </div>
 
-</body>
+              <div class="match-meta">
+                <span>Stadium: Blue Planet</span>
+                <span>Kickoff: 8:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
+        <section class="feature-strip" aria-label="Top features">
+          <div class="container feature-grid">
+            <article class="feature-card">
+              <span class="feature-icon">⚽</span>
+              <div>
+                <h3>World-Class Teams</h3>
+                <p>Track the clubs that define football culture across Europe.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <span class="feature-icon">📊</span>
+              <div>
+                <h3>Live Stats</h3>
+                <p>See form, goals, and performance trends all in one place.</p>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <span class="feature-icon">🔥</span>
+              <div>
+                <h3>Big Match Energy</h3>
+                <p>Bring the excitement of derby day, finals, and title races to your fans.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="teams" id="teams">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Top Clubs</p>
+              <h2>Football stories worth following.</h2>
+            </div>
+
+            <div class="team-grid">
+              <article class="team-card card-barca">
+                <div class="team-card-header">
+                  <span class="club-tag">Spain</span>
+                  <span class="rating">9.4</span>
+                </div>
+                <h3>FC Barcelona</h3>
+                <p>
+                  A city built on loyalty and hard work, with a tradition of talent, identity,
+                  and attack-minded football.
+                </p>
+                <ul>
+                  <li>Lamine Yamal</li>
+                  <li>Pedri</li>
+                  <li>Raphinha</li>
+                </ul>
+                <a href="https://www.fcbarcelona.com/en/" target="_blank" rel="noreferrer">Learn More</a>
+              </article>
+
+              <article class="team-card card-real">
+                <div class="team-card-header">
+                  <span class="club-tag">Spain</span>
+                  <span class="rating">9.6</span>
+                </div>
+                <h3>Real Madrid</h3>
+                <p>
+                  A club of champions, icons, and big-stage pressure, known for dominating the
+                  biggest moments in football.
+                </p>
+                <ul>
+                  <li>Kylian Mbappé</li>
+                  <li>Arda Güler</li>
+                  <li>Vinícius Júnior</li>
+                </ul>
+                <a href="https://www.realmadrid.com/en-US" target="_blank" rel="noreferrer">Learn More</a>
+              </article>
+
+              <article class="team-card card-bayern">
+                <div class="team-card-header">
+                  <span class="club-tag">Germany</span>
+                  <span class="rating">9.3</span>
+                </div>
+                <h3>Bayern Munich</h3>
+                <p>
+                  A machine built on power, discipline, and relentless ambition, always ready for
+                  battle in every competition.
+                </p>
+                <ul>
+                  <li>Harry Kane</li>
+                  <li>Alphonso Davies</li>
+                  <li>Jamal Musiala</li>
+                </ul>
+                <a href="https://fcbayern.com/en" target="_blank" rel="noreferrer">Learn More</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="fixtures" id="fixtures">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Upcoming</p>
+              <h2>Fixtures & Results</h2>
+            </div>
+
+            <div class="fixture-list">
+              <div class="fixture-item">
+                <div>
+                  <span class="fixture-day">Fri</span>
+                  <h3>Barcelona vs Real Madrid</h3>
+                </div>
+                <span class="fixture-time">8:00 PM</span>
+              </div>
+
+              <div class="fixture-item">
+                <div>
+                  <span class="fixture-day">Sat</span>
+                  <h3>Bayern Munich vs Dortmund</h3>
+                </div>
+                <span class="fixture-time">6:30 PM</span>
+              </div>
+
+              <div class="fixture-item">
+                <div>
+                  <span class="fixture-day">Sun</span>
+                  <h3>Manchester City vs Arsenal</h3>
+                </div>
+                <span class="fixture-time">7:15 PM</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="news" id="news">
+          <div class="container">
+            <div class="section-heading">
+              <p class="eyebrow">Latest</p>
+              <h2>Matchday headlines</h2>
+            </div>
+
+            <div class="news-grid">
+              <article class="news-card highlight">
+                <div class="news-badge">Analysis</div>
+                <h3>How tactical shape is changing the modern midfield battle</h3>
+                <p>
+                  Teams are using smarter pressing and wider passing lanes to control rhythm and
+                  create more chances in transition.
+                </p>
+              </article>
+
+              <article class="news-card">
+                <div class="news-badge">Club News</div>
+                <h3>Young talent continues to reshape the top-flight scene</h3>
+                <p>Fresh players are making huge impacts with bravery, pace, and creative risk.</p>
+              </article>
+
+              <article class="news-card">
+                <div class="news-badge">Opinion</div>
+                <h3>Pressure moments reveal which teams are built for silverware</h3>
+                <p>Championship mentality often separates contenders from the rest of the pack.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" id="fans">
+        <div class="container footer-inner">
+          <div>
+            <div class="brand footer-brand">
+              <span class="brand-mark">F</span>
+              <span>Futbol</span>
+            </div>
+            <p>We wish you the best of luck with finding a team. Share your stories and pictures.</p>
+          </div>
+
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#teams">Teams</a>
+            <a href="#fixtures">Fixtures</a>
+            <a href="#news">News</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
