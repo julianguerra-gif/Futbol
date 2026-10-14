@@ -1,4 +1,7 @@
- .goal-scene {
+body {
+  Background-color:babyblue
+}
+.goal-scene {
   position: relative;
   width: 100%;
   max-width: 800px;
@@ -187,8 +190,4 @@ h4 {
 li,
 h5 {
   font-family: monospace;
-}
-
-body {
-  Background-color:babyblue
 }
